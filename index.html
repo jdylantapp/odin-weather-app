@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather</h1>
+        </div>
+
+        <div class="form-container">
+            <form method="dialog" id="search-location">
+                <p>
+                    <input type="text" id="location" name="city" placeholder="Please Enter a Location" required>
+                </p>
+            </form>
+            <input type="submit" form="search-location" value="Search">
+        </div>
+        
+        <div class="weather-card">
+            <h2 class="city-title">Toronto, Canada</h2>
+            <div class="weather-logo"></div>
+            <h3 class="temperature">4&deg;C</h3>
+            <p class="weather-condition">Cloudy</p>
+            <p class="humidity">Humidity: 88%</p>
+        </div>
+
+
+        <div class="footer">
+            <div>Copyright 2025 jdylantapp</div>
+            <a href="https://github.com/jdylantapp/odin-weather-app">
+                <div class="git-logo" href="https://github.com/jdylantapp/odin-weather-app"></div>
+            </a>
+        </div>
+    </div>
+   
+</body>
+</html>

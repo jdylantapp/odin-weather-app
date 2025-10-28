@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:  rgb(222, 222, 222);
+    font-size: 40px;
+}
+
+.header {
+    background-color: rgb(41, 41, 41);
+    width: 100%;
+    padding: 25px 0px;
+    text-align: center;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.183);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+input[type="text"] {
+    height: 50px;
+    width: 220px;
+    background-color: rgb(41, 41, 41);
+    color: rgb(222, 222, 222);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 10px;
+    transition: border-color 0.2s;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:hover {
+    border-color: rgb(174, 174, 174);
+}
+
+input[type="submit"] {
+    background-color: rgb(41, 41, 41);
+    color: rgb(222, 222, 222);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 40px;
+    width: 150px;
+    border: 1px solid rgb(174, 174, 174);
+    border-radius: 10px;
+    transition: border-color 0.2s;
+}
+
+input[type="submit"]:hover {
+    border-color: rgb(41, 41, 41);
+    background-color: rgb(174, 174, 174);
+    color: rgb(41, 41, 41);
+    cursor: pointer;
+}
+
+.weather-card {
+    display: none;
+}
+
+.weather-card.active {
+    background-color: rgb(41, 41, 41);
+    color: rgb(222, 222, 222);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: min(460px, 40%);
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.378);
+    padding: 10px 0px;
+}
+
+.city-title {
+    font-size: 33px;
+    margin-bottom: 30px;
+}
+
+.weather-logo {
+    background-image: url('./assets/cloudy.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+}
+
+.temperature {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.weather-condition {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.humidity {
+    font-size: 18px;
+    margin: 0px;
+}
+
+
+.footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:  rgb(222, 222, 222);
+    background-color: rgb(25, 25, 25);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+.git-logo {
+    background-image: url('./assets/github.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(90%);
+    height: 30px;
+    width: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.git-logo:hover {
+    transform: rotate(360deg);
+}
